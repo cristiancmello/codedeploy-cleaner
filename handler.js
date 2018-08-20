@@ -11,7 +11,7 @@ AWS.config.update({
 const codeDeploy = new AWS.CodeDeploy();
 const autoscaling = new AWS.AutoScaling();
 
-module.exports.hello = (event, context, callback) => {
+module.exports.codeDeployCleaner = (event, context, callback) => {
   const result = dotenv.config();
  
   if (result.error) {
