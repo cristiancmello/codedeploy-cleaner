@@ -10,5 +10,5 @@ provider:
   runtime: nodejs8.10
 
 functions:
-  hello:
-    handler: handler.hello
+  fnCodeDeployCleaner:
+    handler: handler.codeDeployCleaner
