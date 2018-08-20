@@ -1,0 +1,10 @@
+{
+  "name": "codedeploy-cleaner",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "aws-sdk": "^2.296.0",
+    "dotenv": "^6.0.0"
+  }
+}
