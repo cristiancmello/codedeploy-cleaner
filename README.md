@@ -56,20 +56,34 @@ AWS CodeDeploy Cleaner with Serverless.
 }
 ```
 
-### Create a AWS SNS Topic
+### Installation (Deploy)
 
-* Call `app-devops-topic` (example).
-
-## Installation (Deploy)
-
-### Set env file
+#### Set env file
 
 ```sh
 cp env.example .env
 ```
 
-## Deployment
+#### Install dependencies
+
+```sh
+yarn  # or npm install
+```
+
+#### Deployment
 
 ```sh
 sls deploy
 ```
+
+### Create a AWS SNS Topic
+
+* Call `app-devops-topic` (example).
+
+#### Create subscription
+
+* Choose a lambda function deployed. As this project provides the lambda function for this, choose `x`.
+
+
+
+
