@@ -1,6 +1,7 @@
 # CodeDeploy Cleaner
 
-AWS CodeDeploy Cleaner with Serverless.
+AWS CodeDeploy Cleaner with Serverless. A solution to remove instances 
+created by failed processes from **Blue/Green** schema.
 
 ## First steps
 
@@ -64,6 +65,12 @@ AWS CodeDeploy Cleaner with Serverless.
 cp env.example .env
 ```
 
+##### AWS Credentials
+
+* Allow all service operations:
+  * **AWS EC2 AutoScaling**;
+  * **AWS CodeDeploy**.
+
 #### Install dependencies
 
 ```sh
@@ -84,6 +91,11 @@ sls deploy
 
 * Choose a lambda function deployed. As this project provides the lambda function for this, choose `x`.
 
+### Create a trigger for the deployment group
 
+* In **AWS CodeDeploy** > **Deployment groups**, select a group with Deployment Type as **Blue/Green**;
+* In **Advanced**, access **Create Trigger**. Call `app-trigger`;
+* In **Events**, select **Deployment Status (all)** and **Instance Status (all)**;
+* In **Amazon SNS Topics**, select the created topic `app-devops-topic`;
 
 
