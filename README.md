@@ -89,7 +89,7 @@ sls deploy
 
 #### Create subscription
 
-* Choose a lambda function deployed. As this project provides the lambda function for this, choose `x`.
+* Choose a lambda function deployed. As this project provides the lambda function for this, choose `codeDeployCleaner`.
 
 ### Create a trigger for the deployment group
 
