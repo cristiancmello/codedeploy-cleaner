@@ -3,6 +3,12 @@
 AWS CodeDeploy Cleaner with Serverless. A solution to remove instances 
 created by failed processes from **Blue/Green** schema.
 
+## How it works?
+
+<p align="center">
+    <img style="width:80%" src="https://raw.githubusercontent.com/cristiancmello/assets/master/codedeploy-cleaner/codedeploy-cleaner-arch-diagram.png"/>
+</p>
+
 ## First steps
 
 ### Set CodeDeploy Role to send messages to an AWS SNS topic
